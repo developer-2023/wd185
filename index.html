@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+            transfer of data by reference - exercise
+        */
+
+        function modArr(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                arr[i] *= 3;
+            }
+        }
+
+        const arr1 = [1,2,3,4,5,6,7];
+        modArr(arr1);
+        console.log(arr1);
+    </script>
+</body>
+</html>
